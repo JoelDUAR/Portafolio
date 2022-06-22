@@ -1,40 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <title>Joel Dupraz Ardiles</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Meddon&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/730791ff8d.js" crossorigin="anonymous"></script>
+
+    <title>Joel Dupraz</title>
+  </head>
+  <body>
     <header id="header">
-        <canvas  id="presentacion" width="1000" height="800"></canvas>
-        <nav id="menu">
-            <a href=""></a>
-        </nav>
+      <div id="contenedor__titulo__principal">
+        <h1 id="titulo__principal">
+          <span class="letra__accion">H</span
+          ><span class="letra__accion">o</span
+          ><span class="letra__accion">l</span
+          ><span class="letra__accion">a</span
+          ><span class="letra__accion">,</span> <br />
+          <span class="letra__accion2">s</span
+          ><span class="letra__accion2">o</span
+          ><span class="letra__accion2">y</span>
+          <span id="span__nombre" class="nombre">Joel Dupraz </span> <br />
+          <span class="letra__accion">D</span
+          ><span class="letra__accion">e</span
+          ><span class="letra__accion2">s</span
+          ><span class="letra__accion">a</span
+          ><span class="letra__accion">r</span
+          ><span class="letra__accion2">r</span
+          ><span class="letra__accion">o</span
+          ><span class="letra__accion">l</span
+          ><span class="letra__accion2">l</span
+          ><span class="letra__accion">a</span
+          ><span class="letra__accion">d</span
+          ><span class="letra__accion">o</span
+          ><span class="letra__accion">r</span>
+          <span class="letra__accion2">web</span>
+        </h1>
+        <div id="div__scroll__down">Scroll Down</div>
+      </div>
+      <canvas id="canvas"></canvas>
+      <nav id="menu">
+        <div id="container__nombre">
+          <a href="./index.html" class="btn__back"><h3 id="menu__titulo" class="nombre">Joel Dupraz</h3></a>
+        </div>
+        <div id="container__nav__boton">
+          <input type="checkbox" id="btn-menu" />
+          <label for="btn-menu" class="lbl-menu">
+            <span id="spn1"></span>
+            <span id="spn2"></span>
+            <span id="spn3"></span>
+          </label>
+        </div>
+        <div id="container__redes">
+          <a href="https://www.linkedin.com/in/joel-dupraz-ardiles/" class="link" target="blank"><i class="fa-brands fa-linkedin icon"></i></a>
+        <a href="https://github.com/JoelDUAR" class="link" target="blank"><i class="fa-brands fa-github icon"></i></a>
+        </div>
+      </nav>
     </header>
     <main>
-        <div>
-            sobre mi
+      <section id="container__sobre-mi">
+        <div id="container__imagen__sobre-mi">
+          <img src="./assets/imagen/Civil_JyC-18.jpg" alt="" />
         </div>
-        <div>
-            softskills
-        </div>
-        <div>
-            formación y cursos
-        </div>
-        <div>
-            experiencia (proyectos)
-        </div>
+        <div>sobre mi</div>
+      </section>
+      <section id="container__softskills">
+        <div>softskills</div>
+      </section>
+      <section id="container__fomracion">
+        <div>formación y cursos</div>
+      </section>
+      <section id="container__proyectos">
+        <div>experiencia (proyectos)</div>
+      </section>
+      <section id="container__formulario">
         <div>formulario de contacto</div>
+      </section>
     </main>
-    <footer>
-footer
-    </footer>
+    <footer>footer</footer>
 
-
-
-    <script src="./JS/funciones.js"></script>
-</body>
+    <script src="./JS/tableros.js"></script>
+    <script src="./JS/botones.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </body>
 </html>
