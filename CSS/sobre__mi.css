@@ -1,0 +1,13 @@
+#container__sobre-mi{
+    border: 1px solid black;
+    width: 99vw;
+    height: 98vh;
+
+}
+
+#imagen__sobre__mi{
+    width: 50vw;
+    height:98vh;
+    opacity: 0.2;
+}
+

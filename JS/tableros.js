@@ -42,7 +42,6 @@ function crearParticulas() {
             velocidad: 0.01+Math.random()*0.02,
             orbita: radio*.3
         };
-        console.log(particula);
         arrparticulas.push( particula );
     }
 }

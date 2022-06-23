@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/reset.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/sobre__mi.css">
+    <link rel="stylesheet" href="./CSS/softskills.css">
+    <link rel="stylesheet" href="./CSS/formacion.css">
+    <link rel="stylesheet" href="./CSS/proyectos.css">
+    <link rel="stylesheet" href="./CSS/formulario.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Meddon&display=swap"
       rel="stylesheet"
@@ -66,9 +72,8 @@
     <main>
       <section id="container__sobre-mi">
         <div id="container__imagen__sobre-mi">
-          <img src="./assets/imagen/Civil_JyC-18.jpg" alt="" />
+          <img src="./assets/imagen/Civil_JyC-18.jpg" alt="imagen sobre mi" id="imagen__sobre__mi" />
         </div>
-        <div>sobre mi</div>
       </section>
       <section id="container__softskills">
         <div>softskills</div>
@@ -83,7 +88,24 @@
         <div>formulario de contacto</div>
       </section>
     </main>
-    <footer>footer</footer>
+    <footer>
+      <div id="footer__div__email">
+        <h3 class="footer__titulo__secundario nombre">Mi email</h3>
+        <a href="mailto:joel_dupraz@hotmail.com?Subject=Interesado%20en%20contactarte" class="a__footer__mail"><p class="footer__email">joel_dupraz@hotmail.com</p></a>
+      </div>
+      <div id="footer__central">
+        <a href="./index.html" class="btn__back"><span id="footer__span__nombre" class="nombre">Joel Dupraz</span></a>
+        <p id="footer__central__texto">Gracias por visitar mi sitio web, aprecio que me hayas brindado tu tiempo y te deseo muchas bendiciones</p>
+      </div>
+      <div id="footer__links">
+        <h3 class="footer__titulo__secundario nombre">Links</h3>
+        <a href="#container__sobre-mi" id="footer__link__a">Sobre Mi</a>
+        <a href="#container__softskills" id="footer__link__a">Soft Skills</a>
+        <a href="#container__fomracion" id="footer__link__a">Formación</a>
+        <a href="#container__proyectos" id="footer__link__a">Experiencia</a>
+        <a href="#container__formulario" id="footer__link__a">Contactame</a>
+      </div>
+    </footer>
 
     <script src="./JS/tableros.js"></script>
     <script src="./JS/botones.js"></script>
