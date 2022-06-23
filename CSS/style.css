@@ -8,10 +8,13 @@
   --color-hover2: #21f928;
   --color-ceniza: #c8bfbf;
   --color-link: #5286c5;
+  --color-titulo-cabecera: #002146;
 
   --meddon: "Meddon", cursive;
   --freckle:'Freckle Face', cursive;
   --lato: 'Lato', sans-serif;
+  --monoton: 'Monoton', cursive;
+  --open-sans: 'Open Sans', sans-serif;
 }
 
 body{

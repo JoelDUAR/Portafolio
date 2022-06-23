@@ -5,9 +5,75 @@
 
 }
 
+.section__titulo__cabecera{
+    position: relative;
+    font-family: var(--monoton);
+    top: -95vh;
+    left: 45vw;
+    color: var(--color-titulo-cabecera);
+    z-index: 1;
+    font-size:9.5rem;
+    opacity: 0.2;
+    
+}
+
 #imagen__sobre__mi{
     width: 50vw;
     height:98vh;
-    opacity: 0.2;
+    opacity: 0.1;
+    z-index: 0;
+    position: relative;
 }
+
+#sobre-mi__p__principal{
+   
+    font-family: var(--lato);
+    z-index: 1;
+    position: relative;
+    top: -90vh;
+    left: 45vw;
+    display: flex;
+    flex-wrap: wrap;
+    width:45vw;
+    font-size: 1.8rem;
+    font-family: var(--lato);
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-ceniza);
+}
+
+#sobre-mi__p__biografia{
+    
+    font-family: var(--open-sans);
+    z-index: 1;
+    position: relative;
+    top: -85vh;
+    left: 45vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 45vw;
+    font-size: 1.8rem;
+    font-family: var(--lato);
+    text-align: center;
+    color: var(--color-ceniza);
+    line-height: 2.9rem
+}
+
+#sobre-mi__p__dedicatoria{
+    
+    font-family: var(--lato);
+    z-index: 1;
+    position: relative;
+    top: -74vh;
+    left: 6vw;
+    display: flex;
+    flex-wrap: wrap;
+    width:50vw;
+    font-size: 1.8rem;
+    font-family: var(--open-sans);
+    text-align: center;
+    font-style: italic;
+    color: var(--color-ceniza)
+}
+
 
