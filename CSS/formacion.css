@@ -13,7 +13,7 @@ z-index: 0;
     border: 1px solid #000000;
     z-index: 1;
     position: relative;
-    margin-left: 0.5vw;
-    background: rgb(255, 255, 255);
+    margin: 42vh 0 0 0.5vw;
+    background: var(--background-canvas);
     border-radius: 15px;
 }

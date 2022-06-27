@@ -102,9 +102,9 @@ function loop() {
 
 /* -------------------------------------------------------------0000------------------------------------------------------------------- */
 
-let anchoTablero = 1250;
-let altoTablero = 100;
-let tablero2 = document.querySelector("#canvas__formacion");;
+let anchoTablero = 1300;
+let altoTablero =400;
+let tablero2 = document.querySelector("#canvas__formacion");
 let pincel2;
 let arrparticulas2;
 let coorX = (anchoTablero - window.innerWidth)*-1;
@@ -120,7 +120,7 @@ arrparticulas2 = [];
             variadorY: (Math.random()*2)+1,
             recorrido: [],
             tamanio: 4+ Math.random()*6,
-            color: Math.random()>0.5? "#000000" : Math.random()<0.5? "#2186f9" : "#d44efc"
+            color: Math.random()>0.5? "#ffffff" : Math.random()<0.5? "#2186f9" : "#d44efc"
         })
     }
     console.log(arrparticulas2[0].x)

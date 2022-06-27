@@ -1,15 +1,24 @@
 :root {
   --background-menu: rgb(33, 33, 33);
-  --background-spn: rgb(0, 0, 0);
+  --background-spn: rgb(184, 184, 184);
   --background: rgb(45, 44, 44);
   --background-li: rgba(230, 223, 223, 0.514);
+  --background-canvas: rgb(101, 101, 101);
+  --background-negro-transparente: rgba(0, 0, 0, 0.4);
+
+  --btn-sombra-blanca: #ffffff;
+  --btn-sombra-oscura: #000000;
 
   --color-general: #2186f9;
   --color-hover: #d44efc;
+  --color__bg__fondos: #d44efc;
   --color-hover2: #21f928;
   --color-ceniza: #c8bfbf;
   --color-link: #5286c5;
-  --color-titulo-cabecera: #002146;
+  --color-black: black;
+  --color-titulo-cabecera: #0750a3;
+  --color-sombra-btn: #004782;
+  --btn-link-card: #36ca15a4;
 
   --meddon: "Meddon", cursive;
   --freckle:'Freckle Face', cursive;
@@ -27,7 +36,7 @@ body{
   font-family: var(--monoton);
   color: var(--color-titulo-cabecera);
   z-index: 1;
-  font-size:9.5rem;
+  font-size:6.5rem;
   opacity: 0.2;
   
 }
