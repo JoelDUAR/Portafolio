@@ -3,3 +3,80 @@
     width: 99vw;
     height: 97vh;
 }
+
+#SoftSkills__contenedor, #hobbie__contenedor{
+    width: 72vw;
+    margin: 5vh 0 0 9vw;
+    display:flex;
+    position: absolute;
+}
+
+
+.softSkills__ul{
+    
+    border-radius: 5px;
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    
+}
+
+.softSkills__li{
+    background: var(--background-li);
+    border-radius: 10px;
+    width: 7vw;
+    height: 15vh;
+    margin: 0.5vh 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.softSkills__li__imagen{
+    width:4vw;
+    height:8h;
+    margin-bottom: 1.3vh;
+    padding: 0.5rem;
+}
+
+.imagenModificada{
+    width: 4vw;
+    height: 8vh;
+    margin: 1vh 0 1vh 0;
+}
+
+#skills__uno{
+    width:6vw;
+    margin-top: -0.5vh;
+    margin-bottom: -0.9rem;
+}
+
+#skills__cinco{
+    width:6.5vw;
+    height: 8vh;
+}
+
+#skills__siete{
+    width:3.5vw;
+}
+
+.softSkills__li__p{
+    font-family: var(--lato);
+    text-align: center;
+    color: var(--color-ceniza);
+}
+
+.softSkills__titulo__skills{
+ font-family: var(--open-sans);
+ font-size: 5rem;
+ color: var(--color-ceniza);
+ text-decoration-line: underline;
+}
+
+#hobbie__contenedor{
+    margin: 55vh 0 0 9vw;
+    width: 72vw;
+    height: 15.5vh;
+
+}

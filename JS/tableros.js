@@ -9,8 +9,8 @@ let CantidadParticulas = 12;
 let tablero;
 let pincel;
 let arrparticulas;
-let mouseX = (anchoPantalla);
-let mouseY = (altoPantalla);
+let mouseX = anchoPantalla;
+let mouseY = altoPantalla;
 /* funcion llamada al comienzo de todo */
 inicio();
 
@@ -59,7 +59,7 @@ function redimensionarPantalla() {
 function loop() {
     
     // Fade out the lines slowly by drawing a rectangle over the entire canvas
-    pincel.fillStyle = 'rgba(0,0,0,0.05)';
+    pincel.fillStyle = 'rgba(28,28,28,0.1)';
     pincel.fillRect(0, 0, pincel.canvas.width, pincel.canvas.height);
     
     for (i = 0; i < arrparticulas.length; i++) {
@@ -98,4 +98,91 @@ function loop() {
         pincel.arc(particula.posicion.x, particula.posicion.y, particula.tamaño/2, 0, Math.PI*2, true);
         pincel.fill();
     }
+}
+
+/* -------------------------------------------------------------0000------------------------------------------------------------------- */
+
+let anchoTablero = 1250;
+let altoTablero = 100;
+let tablero2 = document.querySelector("#canvas__formacion");;
+let pincel2;
+let arrparticulas2;
+let coorX = (anchoTablero - window.innerWidth)*-1;
+let coorY = (altoTablero - window.innerHeight)*-1;
+
+
+arrparticulas2 = [];
+    for(let i = 0; i < 100; i++){
+        arrparticulas2.push({
+            x: Math.random()*coorX,
+            y: Math.random()*coorY,
+            variadorX: (Math.random()*2)-1,
+            variadorY: (Math.random()*2)+1,
+            recorrido: [],
+            tamanio: 4+ Math.random()*6,
+            color: Math.random()>0.5? "#000000" : Math.random()<0.5? "#2186f9" : "#d44efc"
+        })
+    }
+    console.log(arrparticulas2[0].x)
+    if (tablero2 && tablero2.getContext) {
+            pincel2 = tablero2.getContext('2d');
+            inicioTablero();
+        }
+    
+function inicioTablero(){
+    window.addEventListener("resize", redimensionarTablero2, false);
+    setInterval(dibujarParticulas, 20);
+    pincel2.beginPath();
+    redimensionarTablero2();
+    
+   } 
+
+
+console.log(arrparticulas2)
+
+function dibujarParticulas(){
+    pincel2.clearRect(0, 0, coorY, coorY);
+
+    for(let i = 0; i < arrparticulas2.length; i++){
+        arrparticulas2[i].x += arrparticulas2[i].variadorX;
+        arrparticulas2[i].y += arrparticulas2[i].variadorY;
+
+        if(arrparticulas2[i].x > tablero2.width){
+            arrparticulas2[i].variadorX = -1-Math.random();
+        } else if(arrparticulas2[i].x < 0){
+            arrparticulas2[i].variadorX = 1+Math.random();
+        }else{
+            arrparticulas2[i].variadorX *= 1+(Math.random()*0.005);
+        }
+
+        if(arrparticulas2[i].y > tablero2.height){
+            arrparticulas2[i].variadorY = -1-Math.random();
+        } else if(arrparticulas2[i].y < 0){
+            arrparticulas2[i].variadorY = 1+ Math.random();
+        }else{
+            arrparticulas2[i].variadorY *= 1+(Math.random()*0.005);
+        }
+
+        pincel2.strokeStyle = arrparticulas2[i].color;
+        pincel2.beginPath();
+        for(var j = 0; j < arrparticulas2[i].recorrido.length; j++){
+            pincel2.lineTo(arrparticulas2[i].recorrido[j].x, arrparticulas2[i].recorrido[j].y)
+        }
+        pincel2.stroke();
+        arrparticulas2[i].recorrido.push({x: arrparticulas2[i].x, y: arrparticulas2[i].y});
+        if(arrparticulas2[i].recorrido.length > 45){
+            arrparticulas2[i].recorrido.shift();
+        }
+        
+        pincel2.fillStyle = arrparticulas2[i].color;
+        pincel2.beginPath();
+        pincel2.arc(arrparticulas2[i].x, arrparticulas2[i].y, arrparticulas2[i].tamanio, 0, Math.PI*2, true );
+        pincel2.closePath();
+        pincel2.fill();
+    }
+}
+console.log(arrparticulas2)
+function redimensionarTablero2(){
+    tablero2.width = (anchoTablero - window.innerWidth)*-1 ;
+    tablero2.height = (altoTablero - window.innerHeight)*-1;
 }

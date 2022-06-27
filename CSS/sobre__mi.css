@@ -5,16 +5,9 @@
 
 }
 
-.section__titulo__cabecera{
-    position: relative;
-    font-family: var(--monoton);
+.sobre-mi__titulo{
     top: -95vh;
     left: 45vw;
-    color: var(--color-titulo-cabecera);
-    z-index: 1;
-    font-size:9.5rem;
-    opacity: 0.2;
-    
 }
 
 #imagen__sobre__mi{
@@ -64,11 +57,11 @@
     font-family: var(--lato);
     z-index: 1;
     position: relative;
-    top: -74vh;
-    left: 6vw;
+    top: -89vh;
+    left: 3vw;
     display: flex;
     flex-wrap: wrap;
-    width:50vw;
+    width:55vw;
     font-size: 1.8rem;
     font-family: var(--open-sans);
     text-align: center;

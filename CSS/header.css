@@ -9,7 +9,6 @@
   
   #presentacion {
     position: absolute;
-    background-color: var(--background-spn);
     display: block;
     z-index: 0;
   }

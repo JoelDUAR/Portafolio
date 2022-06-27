@@ -2,6 +2,7 @@
   --background-menu: rgb(33, 33, 33);
   --background-spn: rgb(0, 0, 0);
   --background: rgb(45, 44, 44);
+  --background-li: rgba(230, 223, 223, 0.514);
 
   --color-general: #2186f9;
   --color-hover: #d44efc;
@@ -19,6 +20,16 @@
 
 body{
   background: var(--background)
+}
+
+.section__titulo__cabecera{
+  position: relative;
+  font-family: var(--monoton);
+  color: var(--color-titulo-cabecera);
+  z-index: 1;
+  font-size:9.5rem;
+  opacity: 0.2;
+  
 }
 
 footer{

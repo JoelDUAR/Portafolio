@@ -3,3 +3,10 @@
     width: 99vw;
     height: 97vh;
 }
+
+.proyectos__titulo{
+    margin: 8vh 0 0 0.5vw;
+    width: 2vw;
+    flex-wrap: wrap;
+    line-height: 26.5vh;
+}

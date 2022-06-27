@@ -1,5 +1,17 @@
-#container__formulario{
-    border: 1px solid black;
-    width: 99vw;
-    height: 79vh;
+#container__formulario {
+  border: 1px solid black;
+  width: 99vw;
+  height: 79vh;
+}
+
+.contacto__titulo {
+  margin: 2vh 0 0 70vw;
+  width: 2.5vw;
+  flex-wrap: wrap;
+  line-height: 25.5vh;
+}
+
+.titulo__cabecera__texto {
+  display: flex;
+  text-align: right;
 }
