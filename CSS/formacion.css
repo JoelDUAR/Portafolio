@@ -1,7 +1,7 @@
 #container__formacion {
   border: 1px solid black;
   width: 90vw;
-  height: 97vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -21,7 +21,7 @@
 .grid__formacion {
   display: grid;
   grid-template-columns: 19% 19% 19% 19% 19%;
-  grid-template-rows: 27% 27% 27% 27%;
+  grid-template-rows: 27% 27% 27% 27% 27%;
   width: 100%;
   height: 100%;
   position: relative;

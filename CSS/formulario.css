@@ -44,7 +44,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  background: rgba(0, 0, 255, 0.363);
+  background: var(--background-formulario)
 }
 
 .titulo__formulario{
@@ -66,6 +66,7 @@
   margin-bottom: 1.4vh;
   border-radius: 5px;
   background: var(--background-input);
+  font-size:1rem
 }
 
 .estilos__elementos__formularios::placeholder{
@@ -73,7 +74,7 @@
 }
 
 .boton__formulario{
-  width: 4vw;
+  width: 8vw;
   height: 12vh;
   background: var(--color-general)
 }

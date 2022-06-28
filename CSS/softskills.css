@@ -75,15 +75,39 @@
 .cuadro4__hobbie:hover,
 .cuadro5__hobbie:hover,
 .cuadro6__hobbie:hover{
-    transform: rotateY(180deg) translateZ(90px);
   transition: all 600ms;
 }
 
+figure{
+  display: inline-block;
+  position: relative;
+}
 
-.cuadro__skill {
+figcaption{
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: var(--color-link-transparencia);
+  width: 94%;
+  padding: 3%;
+  height:94%;
+  
+}
+
+figure:hover figcaption {
+  display: flex;
+  justify-content:center;
+  align-items: flex-end;
+  font-family: var(--lato);
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: bold;
+}
+/* .cuadro__skill {
   grid-column: 1 / 2;
   grid-row: 1/ 2;
-}
+} */
 
 .cuadro2__skill {
   grid-column: 2 / 3;

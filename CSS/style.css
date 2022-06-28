@@ -6,6 +6,7 @@
   --background-canvas: 
   --background-negro-transparente: rgba(0, 0, 0, 0.4);
   --background-input: rgba(101, 101, 101, 0.812);
+  --background-formulario: rgba(0, 0, 255, 0.92);
 
   --btn-sombra-blanca: #ffffff;
   --btn-sombra-oscura: #000000;
@@ -16,6 +17,7 @@
   --color-hover2: #21f928;
   --color-ceniza: #c8bfbf;
   --color-link: #5286c5;
+  --color-link-transparencia: #5286c594;
   --color-black: black;
   --color-titulo-cabecera: #0750a3;
   --color-sombra-btn: #004782;
