@@ -27,7 +27,6 @@
 
 .titulo {
   font-weight: bold;
-  text-decoration: underline;
   margin: 10vh 0 4vh 42vw;
   color: var(--color-titulo-cabecera);
 }

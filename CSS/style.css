@@ -3,8 +3,9 @@
   --background-spn: rgb(184, 184, 184);
   --background: rgb(45, 44, 44);
   --background-li: rgba(230, 223, 223, 0.514);
-  --background-canvas: rgb(101, 101, 101);
+  --background-canvas: 
   --background-negro-transparente: rgba(0, 0, 0, 0.4);
+  --background-input: rgba(101, 101, 101, 0.812);
 
   --btn-sombra-blanca: #ffffff;
   --btn-sombra-oscura: #000000;

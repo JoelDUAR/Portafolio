@@ -28,11 +28,12 @@
     display: flex;
     flex-wrap: wrap;
     width:45vw;
-    font-size: 1.8rem;
+    font-size: 1.8em;
     font-family: var(--lato);
     font-weight: bold;
     text-align: center;
     color: var(--color-ceniza);
+    line-height: 3rem;
 }
 
 #sobre-mi__p__biografia{
@@ -45,14 +46,14 @@
     display: flex;
     flex-wrap: wrap;
     width: 45vw;
-    font-size: 1.8rem;
+    font-size: 1.8em;
     font-family: var(--lato);
     text-align: center;
     color: var(--color-ceniza);
     line-height: 2.9rem
 }
 
-#sobre-mi__p__dedicatoria{
+/* #sobre-mi__p__dedicatoria{
     
     font-family: var(--lato);
     z-index: 1;
@@ -67,6 +68,6 @@
     text-align: center;
     font-style: italic;
     color: var(--color-ceniza)
-}
+} */
 
 

@@ -61,7 +61,7 @@
 .card__front {
   background-size: cover;
   background-position: center;
-  transform: translateZ(90px);
+  transform: translateZ(60px);
 }
 
 .body__card__front {
@@ -92,7 +92,7 @@
 .body__card__back {
   padding: 40px;
   text-align: center;
-  transform: translateZ(90px);
+  transform: translateZ(40px);
   font-family: var(--lato);
 }
 

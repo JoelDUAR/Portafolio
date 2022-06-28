@@ -1,349 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/imagen/Iconos/código.png" />
-    <link rel="stylesheet" href="./CSS/reset.css" />
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="stylesheet" href="./CSS/header.css" />
-    <link rel="stylesheet" href="./CSS/sobre__mi.css" />
-    <link rel="stylesheet" href="./CSS/softskills.css" />
-    <link rel="stylesheet" href="./CSS/formacion.css" />
-    <link rel="stylesheet" href="./CSS/proyectos.css" />
-    <link rel="stylesheet" href="./CSS/formulario.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Lato&family=Meddon&family=Monoton&family=Open+Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/730791ff8d.js"
-      crossorigin="anonymous"
-    ></script>
 
-    <title>Joel Dupraz</title>
-  </head>
-  <body>
-    <header id="header">
-      <div id="contenedor__titulo__principal">
-        <h1 id="titulo__principal">
-          <span class="letra__accion">H</span
-          ><span class="letra__accion">o</span
-          ><span class="letra__accion">l</span
-          ><span class="letra__accion">a</span
-          ><span class="letra__accion">,</span> <br />
-          <span class="letra__accion2">s</span
-          ><span class="letra__accion2">o</span
-          ><span class="letra__accion2">y</span>
-          <span id="span__nombre" class="nombre">Joel Dupraz </span> <br />
-          <span class="letra__accion">D</span
-          ><span class="letra__accion">e</span
-          ><span class="letra__accion2">s</span
-          ><span class="letra__accion">a</span
-          ><span class="letra__accion">r</span
-          ><span class="letra__accion2">r</span
-          ><span class="letra__accion">o</span
-          ><span class="letra__accion">l</span
-          ><span class="letra__accion2">l</span
-          ><span class="letra__accion">a</span
-          ><span class="letra__accion">d</span
-          ><span class="letra__accion">o</span
-          ><span class="letra__accion">r</span>
-          <span class="letra__accion2">web</span>
-        </h1>
-        <div id="div__scroll__down">Scroll Down</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/imagen/Iconos/código.png" />
+  <link rel="stylesheet" href="./CSS/reset.css" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="stylesheet" href="./CSS/header.css" />
+  <link rel="stylesheet" href="./CSS/sobre__mi.css" />
+  <link rel="stylesheet" href="./CSS/softskills.css" />
+  <link rel="stylesheet" href="./CSS/formacion.css" />
+  <link rel="stylesheet" href="./CSS/proyectos.css" />
+  <link rel="stylesheet" href="./CSS/formulario.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Lato&family=Meddon&family=Monoton&family=Open+Sans:wght@300&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/730791ff8d.js" crossorigin="anonymous"></script>
+
+  <title>Joel Dupraz</title>
+</head>
+
+<body>
+  <header id="header">
+    <div id="contenedor__titulo__principal">
+      <h1 id="titulo__principal">
+        <span class="letra__accion">H</span><span class="letra__accion">o</span><span
+          class="letra__accion">l</span><span class="letra__accion">a</span><span class="letra__accion">,</span> <br />
+        <span class="letra__accion2">s</span><span class="letra__accion2">o</span><span class="letra__accion2">y</span>
+        <span id="span__nombre" class="nombre">Joel Dupraz </span> <br />
+        <span class="letra__accion">D</span><span class="letra__accion">e</span><span
+          class="letra__accion2">s</span><span class="letra__accion">a</span><span class="letra__accion">r</span><span
+          class="letra__accion2">r</span><span class="letra__accion">o</span><span class="letra__accion">l</span><span
+          class="letra__accion2">l</span><span class="letra__accion">a</span><span class="letra__accion">d</span><span
+          class="letra__accion">o</span><span class="letra__accion">r</span>
+        <span class="letra__accion2">web</span>
+      </h1>
+      <div id="div__scroll__down">Scroll Down</div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <nav id="menu">
+      <div id="container__nombre">
+        <a href="./index.html" class="btn__back">
+          <h3 id="menu__titulo" class="nombre">Joel Dupraz</h3>
+        </a>
       </div>
-      <canvas id="canvas"></canvas>
-      <nav id="menu">
-        <div id="container__nombre">
-          <a href="./index.html" class="btn__back"
-            ><h3 id="menu__titulo" class="nombre">Joel Dupraz</h3></a
-          >
-        </div>
-        <div id="container__nav__boton">
-          <input type="checkbox" id="btn-menu" />
-          <label for="btn-menu" class="lbl-menu">
-            <span id="spn1"></span>
-            <span id="spn2"></span>
-            <span id="spn3"></span>
-          </label>
-        </div>
-        <div id="container__redes">
-          <a
-            href="https://www.linkedin.com/in/joel-dupraz-ardiles/"
-            class="link"
-            target="blank"
-            ><i class="fa-brands fa-linkedin icon"></i
-          ></a>
-          <a href="https://github.com/JoelDUAR" class="link" target="blank"
-            ><i class="fa-brands fa-github icon"></i
-          ></a>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section id="container__sobre-mi">
-        <div id="container__imagen__sobre-mi">
-          <img
-            src="./assets/imagen/Civil_JyC-18.jpg"
-            alt="imagen sobre mi"
-            id="imagen__sobre__mi"
-          />
-        </div>
-        <div class="section__titulo__cabecera sobre-mi__titulo">
-          <p>Sobre mi</p>
-        </div>
-        <div id="sobre-mi__p__principal">
-          <p>
-            Hola, mi nombre es
-            <span id="span__nombre" class="nombre">Joel Dupraz </span> , soy
-            Desarrollador Web, apasionado por Javascript y por Canvas
-          </p>
-        </div>
-        <div>
-          <p id="sobre-mi__p__biografia">
-            Tengo 30 años, argentino, residente en Córdoba Capital. Comencé mis
-            estudios de programación en febrero de 2021, con lenguajes
-            orientados a objetos. Luego descubri el desarrollo web y me enamoré
-            inmediatamente. Me recibí, a comienzos de este año, de Diplomado en
-            desarrollo Web Front End. Al poco tiempo comence a estudiar en ONE -
-            Oracle Next Education, programa patrocinado por Oracle y Alura. Aquí
-            me encuentro siendo un estudiante motivado, feliz y entusiasmado.
-          </p>
-        </div>
-        <div>
-          <p id="sobre-mi__p__dedicatoria">
-            <span id="span__nombre" class="nombre">P/D: </span> A mi esposa,
-            quien es mi pilar, gracias por tu amor, tu apoyo y tu vida
-          </p>
-        </div>
-      </section>
-      <section id="container__softskills">
-        <div>
-          <div class="section__titulo__cabecera softSkills__titulo">
+      <div id="container__nav__boton">
+        <input type="checkbox" id="btn-menu" />
+        <label for="btn-menu" class="lbl-menu">
+          <span id="spn1"></span>
+          <span id="spn2"></span>
+          <span id="spn3"></span>
+        </label>
+      </div>
+      <div id="container__redes">
+        <a href="https://www.linkedin.com/in/joel-dupraz-ardiles/" class="link" target="blank"><i
+            class="fa-brands fa-linkedin icon"></i></a>
+        <a href="https://github.com/JoelDUAR" class="link" target="blank"><i class="fa-brands fa-github icon"></i></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="container__sobre-mi">
+      <div id="container__imagen__sobre-mi">
+        <img src="./assets/imagen/Civil_JyC-18.jpg" alt="imagen sobre mi" id="imagen__sobre__mi" />
+      </div>
+      <div class="section__titulo__cabecera sobre-mi__titulo">
+        <p>Sobre mi</p>
+      </div>
+      <div id="sobre-mi__p__principal">
+        <p>
+          Hola, mi nombre es
+          <span id="span__nombre" class="nombre">Joel Dupraz </span> , soy
+          Desarrollador Web, apasionado por Javascript y por Canvas
+        </p>
+      </div>
+      <div>
+        <p id="sobre-mi__p__biografia">
+          Tengo 30 años, argentino, residente en Córdoba Capital. Comencé mis
+          estudios de programación en febrero de 2021, con lenguajes
+          orientados a objetos. Luego descubri el desarrollo web y me enamoré
+          inmediatamente. Me recibí, a comienzos de este año, de Diplomado en
+          desarrollo Web Front End. Al poco tiempo comence a estudiar en ONE -
+          Oracle Next Education, programa patrocinado por Oracle y Alura. Aquí
+          me encuentro siendo un estudiante motivado, feliz y entusiasmado.
+        </p>
+      </div>
+      <!-- <div>
+        <p id="sobre-mi__p__dedicatoria">
+          <span id="span__nombre" class="nombre">P/D: </span> A mi esposa,
+          quien es mi pilar, gracias por tu amor, tu apoyo y tu vida
+        </p>
+      </div> -->
+    </section>
+    <section id="container__softskills">
+      <div>
+        <div class="section__titulo__cabecera softSkills__titulo">
           <p>Soft Skills</p>
         </div>
-          <div class="container__skills__hobbie">
+        <div class="container__skills__hobbie">
 
-            <div clss="titulo__skills__softSkills"><h5 class="titulo">SKILLS</h5></div>
-            <div class="grid__skills">
-              
-              <div class="cuadro__skill"><img src="./assets/imagen/Logos-soft-skills/html5.png" alt="Logo HTML5" class="img-responsive" ></div>
-              <div class="cuadro2__skill"><img src="./assets/imagen/Logos-soft-skills/css.png" alt="Logo CSS" class="img-responsive"></div>
-              <div class="cuadro3__skill"><img src="./assets/imagen/Logos-soft-skills/Javascript.png" alt="Logo JavaScript" class="img-responsive"></div>
-              <div class="cuadro4__skill"><img src="./assets/imagen/Logos-soft-skills/git.png" alt="Logo Git" class="img-responsive"></div>
-              <div class="cuadro5__skill"><img src="./assets/imagen/Logos-soft-skills/github.png" alt="Logo Github" class="img-responsive"></div>
-              <div class="cuadro6__skill"><img src="./assets/imagen/Logos-soft-skills/sql.png" alt="Logo SQL" class="img-responsive"></div>
-              <div class="cuadro7__skill"><img src="./assets/imagen/Logos-soft-skills/mongodb.png" alt="Logo MongoDB" class="img-responsive"></div>
-              <div class="cuadro8__skill"><img src="./assets/imagen/Logos-soft-skills/nodejs.png" alt="Logo NodeJS" class="img-responsive"></div>
-              <div class="cuadro9__skill"><img src="./assets/imagen/Logos-soft-skills/bootstrap.png" alt="Logo Bootstrap" class="img-responsive"></div>
-              <div class="cuadro10__skill"><img src="./assets/imagen/Logos-soft-skills/npm.png" alt="Logo NPM" class="img-responsive"></div>
-              <div class="cuadro11__skill"><img src="./assets/imagen/Logos-soft-skills/json.png" alt="Logo JSON" class="img-responsive"></div>
-            </div>
-            <div clss="titulo__skills__softSkills"><h5 class="titulo">Hobbies</h5></div>
-            <div class="grid__hobbie">
-              <div class="cuadro__hobbie"><img src="./assets/imagen/Hobbie/cine.png" class="img-responsive" alt="Imagen cine"></div>
-              <div class="cuadro2__hobbie"><img src="./assets/imagen/Hobbie/familia.png" class="img-responsive" alt="Imagen familia"></div>
-              <div class="cuadro3__hobbie"><img src="./assets/imagen/Hobbie/playstation.png" class="img-responsive" alt=" Imagen playstation"></div>
-              <div class="cuadro4__hobbie"><img src="./assets/imagen/Hobbie/auto.png" class="img-responsive" alt="Imagen auto"></div>
-              <div class="cuadro5__hobbie"><img src="./assets/imagen/Hobbie/musica.png" class="img-responsive" alt="Imagen signo musical"></div>
-              <div class="cuadro6__hobbie"><img src="./assets/imagen/Hobbie/charla.png" class="img-responsive" alt="Imagen diálogo"></div>
-            </div>
-        </div>
-      
-    </div>
-           
-      </section>
-      <section id="container__formacion">
-        <div class="section__titulo__cabecera formacion__titulo">
-          <p>Formación</p>
-        </div>
-      </section>
-      <section id="container__proyectos">
-        <div class="section__titulo__cabecera proyectos__titulo">
-         <p class="titulo__cabecera__texto">Proyectos</p>
-        </div>
+          <div clss="titulo__skills__softSkills">
+            <h5 class="titulo">SKILLS</h5>
+          </div>
+          <div class="grid__skills">
 
-        <div class="container__card">
-          <div class="container">
+            <div class="cuadro__skill"><img src="./assets/imagen/Logos-soft-skills/html5.png" alt="Logo HTML5"
+                class="img-responsive"></div>
+            <div class="cuadro2__skill"><img src="./assets/imagen/Logos-soft-skills/css.png" alt="Logo CSS"
+                class="img-responsive"></div>
+            <div class="cuadro3__skill"><img src="./assets/imagen/Logos-soft-skills/Javascript.png"
+                alt="Logo JavaScript" class="img-responsive"></div>
+            <div class="cuadro4__skill"><img src="./assets/imagen/Logos-soft-skills/git.png" alt="Logo Git"
+                class="img-responsive"></div>
+            <div class="cuadro5__skill"><img src="./assets/imagen/Logos-soft-skills/github.png" alt="Logo Github"
+                class="img-responsive"></div>
+            <div class="cuadro6__skill"><img src="./assets/imagen/Logos-soft-skills/sql.png" alt="Logo SQL"
+                class="img-responsive"></div>
+            <div class="cuadro7__skill"><img src="./assets/imagen/Logos-soft-skills/mongodb.png" alt="Logo MongoDB"
+                class="img-responsive"></div>
+            <div class="cuadro8__skill"><img src="./assets/imagen/Logos-soft-skills/nodejs.png" alt="Logo NodeJS"
+                class="img-responsive"></div>
+            <div class="cuadro9__skill"><img src="./assets/imagen/Logos-soft-skills/bootstrap.png" alt="Logo Bootstrap"
+                class="img-responsive"></div>
+            <div class="cuadro10__skill"><img src="./assets/imagen/Logos-soft-skills/npm.png" alt="Logo NPM"
+                class="img-responsive"></div>
+            <div class="cuadro11__skill"><img src="./assets/imagen/Logos-soft-skills/json.png" alt="Logo JSON"
+                class="img-responsive"></div>
+          </div>
+          <div clss="titulo__skills__softSkills">
+            <h5 class="titulo">Hobbies</h5>
+          </div>
+          <div class="grid__hobbie">
+            <div class="cuadro__hobbie"><img src="./assets/imagen/Hobbie/cine.png" class="img-responsive"
+                alt="Imagen cine"></div>
+            <div class="cuadro2__hobbie"><img src="./assets/imagen/Hobbie/familia.png" class="img-responsive"
+                alt="Imagen familia"></div>
+            <div class="cuadro3__hobbie"><img src="./assets/imagen/Hobbie/playstation.png" class="img-responsive"
+                alt=" Imagen playstation"></div>
+            <div class="cuadro4__hobbie"><img src="./assets/imagen/Hobbie/auto.png" class="img-responsive"
+                alt="Imagen auto"></div>
+            <div class="cuadro5__hobbie"><img src="./assets/imagen/Hobbie/musica.png" class="img-responsive"
+                alt="Imagen signo musical"></div>
+            <div class="cuadro6__hobbie"><img src="./assets/imagen/Hobbie/charla.png" class="img-responsive"
+                alt="Imagen diálogo"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="container__formacion">
+      <div class="section__titulo__cabecera formacion__titulo">
+        <p>Formación</p>
+      </div> 
+        <div class="contenedor__titulos">
+
+      <div class="grid__formacion">
+        <div class="titulo__formacion ">
+          <img src="./assets/imagen/Títulos/Joel-Ruben-Dupraz-Ardiles-Principiante-en-programación-2.jpg" alt="Título ONE" class="imgen__titulo">
+          <!-- <div>
+            <p> ONE - Oracle Next Education - Principiante en Programación</p>
+          <p>Primer tramo del curso con certificado, avalando el conocimiento adquirido</p>
+          </div> -->
+        </div>
+        <div class="titulo1__formacion ">
+          <img src="./assets/imagen/Títulos/Certificado-Programador-Web-Inicial-Front-End-Developer..png" alt="Título UTN" class="imgen__titulo">
+          <!-- <div>
+            <p> Programador web inicial - Front Edn Developer</p>
+          <p>Curso destinado a aprender conocimientos y herramientas de un desarrollador Web inicial</p>
+          </div> -->
+        </div>
+        <div class="titulo2__formacion ">
+          <img src="./assets/imagen/Títulos/Certificado-Argentina-Programa-JOEL-RUBEN-DUPRAZ-ARDILES.png" alt="Título Argentina Programa" class="imgen3__titulo">
+         <!--  <div>
+            <p> #SéProgramar</p>
+          <p>Programa de capacitación destinado a quienes desean comenzar a conocer el mundo de la programación</p>
+          </div> -->
+        </div>
+        <div class="titulo3__formacion ">
+          <img src="./assets/imagen/Títulos/Curso - Alura - L+¦gica de Programaci+¦n - parte 31024_1.jpg" alt="Lógica de Programación" class="imgen2__titulo">
+        </div>
+        <div class="titulo4__formacion ">
+          <img src="./assets/imagen/Títulos/Curso-Alura-Consolide-sus-conocimientos-en-el-lenguaje-de-la-web_1.jpg" alt="JavaSript" class="imgen2__titulo">
+        </div>
+        <div class="titulo5__formacion ">
+          <img src="./assets/imagen/Títulos/Curso-Alura-Introducción-al-lenguaje-de-la-web_2.jpg" alt="JavaSript" class="imgen2__titulo">
+        </div>
+        <div class="titulo6__formacion ">
+          <img src="./assets/imagen/Títulos/Curso-Alura-Git-y-Github-controle-y-comparta-su-código_1.jpg" alt="JavaSript" class="imgen2__titulo">
+        </div>
+        <div class="titulo7__formacion ">
+          <img src="./assets/imagen/Títulos/Curso-Alura-CSS-Grid.png" alt="JavaSript" class="imgen2__titulo">
+        </div>
+        <div class="titulo8__formacion ">
+          <img src="./assets/imagen/Títulos/Curso-Alura-Consolide-sus-conocimientos-en-el-lenguaje-de-la-web_1.jpg" alt="JavaSript" class="imgen2__titulo">
+        </div>
+        <div class="titulo9__formacion ">
+          <img src="./assets/imagen/Títulos/Curso-Alura-Consolide-sus-conocimientos-en-el-lenguaje-de-la-web_1.jpg" alt="JavaSript" class="imgen2__titulo">
+        </div>
+        <div class="titulo10__formacion ">
+          <img src="./assets/imagen/Títulos/Curso-Alura-Consolide-sus-conocimientos-en-el-lenguaje-de-la-web_1.jpg" alt="JavaSript" class="imgen2__titulo">
+        </div>
+      </div> 
+    </div> 
+    
+    </section>
+    <section id="container__proyectos">
+      <div class="section__titulo__cabecera proyectos__titulo">
+        <p class="titulo__cabecera__texto">Proyectos</p>
+      </div>
+
+      <div class="container__card">
+        <div class="container">
 
           <div class="card__father card__father1">
-              <div class="card">
-                  <div class="card__front" style="background-image: url(./assets/imagen/Proyectos/Encriptador.png)">
-                      <div class="bg"></div>
-                      <div class="body__card__front">
-                         <input type="button" value="Encriptador" class="input__front">
-                      </div>
-                  </div>
-                  <div class="card__back">
-                      <div class="body__card__back">
-                          <h1 class="titulo__card__back">Encriptador</h1>
-                          <p class="p__card__back">Tecnologias implementadas: HTML5, CSS, JavaScript</p>
-                          <div class="container__btn__card__back">
-                            <a href="https://github.com/JoelDUAR/JoelDUAR.github.io" class="btn__repositorio" target="blank">Repositorio</a>
-                          <a href="https://joelduar.github.io/" class="btn__link" target="blank">Link</a>
-                          </div>
-                          
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-            <div class="card__father">
-                <div class="card">
-                    <div class="card__front" style="background-image: url(./assets/imagen/Proyectos/Juego\ del\ ahorcado.png)">
-                        <div class="bg"></div>
-                        <div class="body__card__front">
-                           <input type="button" value="Juego Ahorcado" class="input__front">
-                        </div>
-                    </div>
-                    <div class="card__back">
-                        <div class="body__card__back">
-                            <h1 class="titulo__card__back">Juego Ahorcado</h1>
-                            <p class="p__card__back">Tecnologias implementadas: HTML5, CSS, JavaScript</p>
-                            <div class="container__btn__card__back">
-                              <a href="https://github.com/JoelDUAR/JoelDUAR.github.io" class="btn__repositorio" target="blank">Repositorio</a>
-                            <a href="https://joelduar.github.io/" class="btn__link" target="blank">Link</a>
-                            </div>
-                            
-                        </div>
-                    </div>
+            <div class="card">
+              <div class="card__front" style="background-image: url(./assets/imagen/Proyectos/Encriptador.png)">
+                <div class="bg"></div>
+                <div class="body__card__front">
+                  <input type="button" value="Encriptador" class="input__front">
                 </div>
+              </div>
+              <div class="card__back">
+                <div class="body__card__back">
+                  <h1 class="titulo__card__back">Encriptador</h1>
+                  <p class="p__card__back">Tecnologias implementadas: HTML5, CSS, JavaScript</p>
+                  <div class="container__btn__card__back">
+                    <a href="https://github.com/JoelDUAR/JoelDUAR.github.io" class="btn__repositorio"
+                      target="blank">Repositorio</a>
+                    <a href="https://joelduar.github.io/" class="btn__link" target="blank">Link</a>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="container">
-              <div class="card__father">
-                  <div class="card">
-                      <div class="card__front" style="background-image: url(./assets/imagen/Proyectos/Portafolio.png)">
-                          <div class="bg"></div>
-                          <div class="body__card__front">
-                             <input type="button" value="Portafolio" class="input__front input__front3">
-                          </div>
-                      </div>
-                      <div class="card__back">
-                          <div class="body__card__back">
-                              <h1 class="titulo__card__back">Portafolio</h1>
-                              <p class="p__card__back">Tecnologias implementadas: HTML5, CSS, JavaScript</p>
-                              <div class="container__btn__card__back">
-                                <a href="https://github.com/JoelDUAR/JoelDUAR.github.io" class="btn__repositorio" target="blank">Repositorio</a>
-                              <a href="https://joelduar.github.io/" class="btn__link" target="blank">Link</a>
-                              </div>
-                              
-                          </div>
-                      </div>
-                  </div>
+          <div class="card__father">
+            <div class="card">
+              <div class="card__front"
+                style="background-image: url(./assets/imagen/Proyectos/Juego\ del\ ahorcado.png)">
+                <div class="bg"></div>
+                <div class="body__card__front">
+                  <input type="button" value="Juego Ahorcado" class="input__front">
+                </div>
               </div>
-            
-            <div class="card__father card__father1">
-              <div class="card">
-                  <div class="card__front" style="background-image: url(./assets/imagen/Proyectos/Primera\ Pagina\ Web.png)">
-                      <div class="bg"></div>
-                      <div class="body__card__front">
-                         <input type="button" value="1° Página Web" class="input__front">
-                      </div>
+              <div class="card__back">
+                <div class="body__card__back">
+                  <h1 class="titulo__card__back">Juego Ahorcado</h1>
+                  <p class="p__card__back">Tecnologias implementadas: HTML5, CSS, JavaScript</p>
+                  <div class="container__btn__card__back">
+                    <a href="https://github.com/JoelDUAR/JoelDUAR.github.io" class="btn__repositorio"
+                      target="blank">Repositorio</a>
+                    <a href="https://joelduar.github.io/" class="btn__link" target="blank">Link</a>
                   </div>
-                  <div class="card__back">
-                      <div class="body__card__back">
-                          <h1 class="titulo__card__back">1° Página Web</h1>
-                          <p class="p__card__back">Tecnologias implementadas: HTML5, CSS</p>
-                          <div class="container__btn__card__back">
-                            <a href="https://github.com/JoelDUAR/Mi-primera-pagina" class="btn__repositorio" target="blank">Repositorio</a>
-                          <a href="https://joelduar.github.io/Mi-primera-pagina/" class="btn__link" target="blank">Link</a>
-                          </div>
-                          
-                      </div>
-                  </div>
+
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="card__father">
+            <div class="card">
+              <div class="card__front" style="background-image: url(./assets/imagen/Proyectos/Portafolio.png)">
+                <div class="bg"></div>
+                <div class="body__card__front">
+                  <input type="button" value="Portafolio" class="input__front input__front3">
+                </div>
+              </div>
+              <div class="card__back">
+                <div class="body__card__back">
+                  <h1 class="titulo__card__back">Portafolio</h1>
+                  <p class="p__card__back">Tecnologias implementadas: HTML5, CSS, JavaScript</p>
+                  <div class="container__btn__card__back">
+                    <a href="https://github.com/JoelDUAR/JoelDUAR.github.io" class="btn__repositorio"
+                      target="blank">Repositorio</a>
+                    <a href="https://joelduar.github.io/" class="btn__link" target="blank">Link</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card__father card__father1">
+            <div class="card">
+              <div class="card__front"
+                style="background-image: url(./assets/imagen/Proyectos/Primera\ Pagina\ Web.png)">
+                <div class="bg"></div>
+                <div class="body__card__front">
+                  <input type="button" value="1° Página Web" class="input__front">
+                </div>
+              </div>
+              <div class="card__back">
+                <div class="body__card__back">
+                  <h1 class="titulo__card__back">1° Página Web</h1>
+                  <p class="p__card__back">Tecnologias implementadas: HTML5, CSS</p>
+                  <div class="container__btn__card__back">
+                    <a href="https://github.com/JoelDUAR/Mi-primera-pagina" class="btn__repositorio"
+                      target="blank">Repositorio</a>
+                    <a href="https://joelduar.github.io/Mi-primera-pagina/" class="btn__link" target="blank">Link</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="container">
-            <div class="card__father">
-                <div class="card">
-                    <div class="card__front" style="background-image: url(./assets/imagen/Proyectos/Css\ Grid\ Layout.png)">
-                        <div class="bg"></div>
-                        <div class="body__card__front">
-                           <input type="button" value="CSS Grid" class="input__front">
-                        </div>
-                    </div>
-                    <div class="card__back">
-                        <div class="body__card__back">
-                            <h1 class="titulo__card__back">CSS Grid</h1>
-                            <p class="p__card__back">Tecnologias implementadas: HTML5, CSS</p>
-                            <div class="container__btn__card__back">
-                              <a href="https://github.com/JoelDUAR/Css-Grid-Layout" class="btn__repositorio" target="blank">Repositorio</a>
-                            <a href="https://joelduar.github.io/Css-Grid-Layout/" class="btn__link" target="blank">Link</a>
-                            </div>
-                            
-                        </div>
-                    </div>
+          <div class="card__father">
+            <div class="card">
+              <div class="card__front" style="background-image: url(./assets/imagen/Proyectos/Css\ Grid\ Layout.png)">
+                <div class="bg"></div>
+                <div class="body__card__front">
+                  <input type="button" value="CSS Grid" class="input__front">
                 </div>
-            </div>
-           
-              <div class="card__father">
-                  <div class="card">
-                      <div class="card__front" style="background-image: url(./assets/imagen/Proyectos/Layout\ Responsive.png)">
-                          <div class="bg"></div>
-                          <div class="body__card__front">
-                             <input type="button" value="Layout Responsive" class="input__front input__front3">
-                          </div>
-                      </div>
-                      <div class="card__back">
-                          <div class="body__card__back">
-                              <h1 class="titulo__card__back">Layout Responsive</h1>
-                              <p class="p__card__back">Tecnologias implementadas: HTML5, CSS, JavaScript</p>
-                              <div class="container__btn__card__back">
-                                <a href="https://github.com/JoelDUAR/Layout-Responsive" class="btn__repositorio" target="blank">Repositorio</a>
-                              <a href="https://joelduar.github.io/Layout-Responsive/" class="btn__link" target="blank">Link</a>
-                              </div>
-                              
-                          </div>
-                      </div>
+              </div>
+              <div class="card__back">
+                <div class="body__card__back">
+                  <h1 class="titulo__card__back">CSS Grid</h1>
+                  <p class="p__card__back">Tecnologias implementadas: HTML5, CSS</p>
+                  <div class="container__btn__card__back">
+                    <a href="https://github.com/JoelDUAR/Css-Grid-Layout" class="btn__repositorio"
+                      target="blank">Repositorio</a>
+                    <a href="https://joelduar.github.io/Css-Grid-Layout/" class="btn__link" target="blank">Link</a>
                   </div>
+
+                </div>
               </div>
             </div>
-      </section>
-      <section id="container__formulario">
-        <div>
-          <canvas id="canvas__formulario"></canvas>
-        </div>
-        <div class="section__titulo__cabecera contacto__titulo">
-          <p class="titulo__cabecera__texto">Con tac to</p>
-          
-        </div>
-        
-      </section>
-    </main>
-    <footer>
-      <div id="footer__div__email">
-        <h3 class="footer__titulo__secundario nombre">Mi email</h3>
-        <a
-          href="mailto:joel_dupraz@hotmail.com?Subject=Interesado%20en%20contactarte"
-          class="a__footer__mail"
-          ><p class="footer__email">joel_dupraz@hotmail.com</p></a
-        >
-      </div>
-      <div id="footer__central">
-        <a href="./index.html" class="btn__back"
-          ><span id="footer__span__nombre" class="nombre">Joel Dupraz</span></a
-        >
-        <p id="footer__central__texto">
-          Gracias por visitar mi sitio web, aprecio que me hayas brindado tu
-          tiempo y te deseo muchas bendiciones
-        </p>
-      </div>
-      <div id="footer__links">
-        <h3 class="footer__titulo__secundario nombre">Links</h3>
-        <a href="#container__sobre-mi" id="footer__link__a">Sobre Mi</a>
-        <a href="#container__softskills" id="footer__link__a">Soft Skills</a>
-        <a href="#container__fomracion" id="footer__link__a">Formación</a>
-        <a href="#container__proyectos" id="footer__link__a">Experiencia</a>
-        <a href="#container__formulario" id="footer__link__a">Contactame</a>
-      </div>
-    </footer>
+          </div>
 
-    <script src="./JS/tableros.js"></script>
-    <script src="./JS/botones.js"></script>
-  </body>
+          <div class="card__father">
+            <div class="card">
+              <div class="card__front" style="background-image: url(./assets/imagen/Proyectos/Layout\ Responsive.png)">
+                <div class="bg"></div>
+                <div class="body__card__front">
+                  <input type="button" value="Layout Responsive" class="input__front input__front3">
+                </div>
+              </div>
+              <div class="card__back">
+                <div class="body__card__back">
+                  <h1 class="titulo__card__back">Layout Responsive</h1>
+                  <p class="p__card__back">Tecnologias implementadas: HTML5, CSS, JavaScript</p>
+                  <div class="container__btn__card__back">
+                    <a href="https://github.com/JoelDUAR/Layout-Responsive" class="btn__repositorio"
+                      target="blank">Repositorio</a>
+                    <a href="https://joelduar.github.io/Layout-Responsive/" class="btn__link" target="blank">Link</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="container__formulario">
+      <div>
+        <canvas id="canvas__formulario"></canvas>
+        <form action="" class="formulario__contacto">
+          <h2 class="titulo__formulario">Contactame</h2>
+          <p class="p__formulario">Espero tu mensaje, abierto a compartir ideas, pensamientos y mejoras continuas.</p>
+          <label for="nombre__contacto" hidden>Nombre</label>
+          <input type="text" id="nombre__contacto" name="nombre" placeholder="Ingrese su nombre"
+            class="estilos__elementos__formularios">
+          <label for="email__contacto" hidden>Email</label>
+          <input type="email" id="nombre__contacto" name="email" placeholder="Ingrese su email"
+            class="estilos__elementos__formularios">
+          <label for="asunto__contacto" hidden>Asunto</label>
+          <input type="text" id="asunto__contacto" name="asunto" placeholder="Ingrese su asunto"
+            class="estilos__elementos__formularios">
+          <label for="mensaje__contacto"></label>
+          <textarea name="" id="" cols="30" rows="20" name="texto" placeholder="Ingrese su comentario"
+            class="estilos__elementos__formularios"></textarea>
+          <button class="boton__formulario estilos__elementos__formularios" type="submit" id="btn"
+            name="btn">Enviar</button>
+        </form>
+      </div>
+      <div class="section__titulo__cabecera contacto__titulo">
+        <p class="titulo__cabecera__texto">Con tac to</p>
+
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <div id="footer__div__email">
+      <h3 class="footer__titulo__secundario nombre">Mi email</h3>
+      <a href="mailto:joel_dupraz@hotmail.com?Subject=Interesado%20en%20contactarte" class="a__footer__mail">
+        <p class="footer__email">joel_dupraz@hotmail.com</p>
+      </a>
+    </div>
+    <div id="footer__central">
+      <a href="./index.html" class="btn__back"><span id="footer__span__nombre" class="nombre">Joel Dupraz</span></a>
+      <p id="footer__central__texto">
+        Gracias por visitar mi sitio web, aprecio que me hayas brindado tu
+        tiempo y te deseo muchas bendiciones
+      </p>
+    </div>
+    <div id="footer__links">
+      <h3 class="footer__titulo__secundario nombre">Links</h3>
+      <a href="#container__sobre-mi" id="footer__link__a">Sobre Mi</a>
+      <a href="#container__softskills" id="footer__link__a">Soft Skills</a>
+      <a href="#container__fomracion" id="footer__link__a">Formación</a>
+      <a href="#container__proyectos" id="footer__link__a">Experiencia</a>
+      <a href="#container__formulario" id="footer__link__a">Contactame</a>
+    </div>
+  </footer>
+
+  <script src="./JS/tableros.js"></script>
+  <script src="./JS/botones.js"></script>
+</body>
+
 </html>
