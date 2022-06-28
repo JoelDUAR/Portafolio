@@ -1,82 +1,183 @@
-#container__softskills{
-    border: 1px solid #000000;
-    width: 99vw;
-    height: 97vh;
+#container__softskills {
+  border: 1px solid #000000;
+  width: 89vw;
+  height: calc(100vh - 2.5rem);
 }
 
-#SoftSkills__contenedor, #hobbie__contenedor{
-    width: 72vw;
-    margin: 5vh 0 0 9vw;
-    display:flex;
-    position: absolute;
+.container__skills__hobbie {
+  font-family: var(--lato);
+  font-size: 2.5rem;
 }
 
-
-.softSkills__ul{
+.grid__skills,
+.grid__hobbie {
+  display: grid;
+  grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+  grid-template-rows: 80%;
+  width: 100%;
+  height: 100%;
+  background: var(--color-link);
+  gap: 0.5rem;
+  border-radius: 50px;
+  justify-content: center;
+  align-content: center;
+  transition: all 600ms;
+}
     
-    border-radius: 5px;
-    list-style: none;
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    
+
+.titulo {
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 10vh 0 4vh 42vw;
+  color: var(--color-titulo-cabecera);
 }
 
-.softSkills__li{
-    background: var(--background-li);
-    border-radius: 10px;
-    width: 7vw;
-    height: 15vh;
-    margin: 0.5vh 1vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.img-responsive {
+  width: 100%;
+  height: 100%;
+  
 }
 
-.softSkills__li__imagen{
-    width:4vw;
-    height:8h;
-    margin-bottom: 1.3vh;
-    padding: 0.5rem;
+
+.cuadro__skill,
+.cuadro2__skill,
+.cuadro3__skill,
+.cuadro4__skill,
+.cuadro5__skill,
+.cuadro6__skill,
+.cuadro7__skill,
+.cuadro8__skill,
+.cuadro9__skill,
+.cuadro10__skill,
+.cuadro11__skill,
+.cuadro__hobbie,
+.cuadro2__hobbie,
+.cuadro3__hobbie,
+.cuadro4__hobbie,
+.cuadro5__hobbie,
+.cuadro6__hobbie{
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 17px  5px var(--background-spn)
+} 
+.cuadro__skill:hover,
+.cuadro2__skill:hover,
+.cuadro3__skill:hover,
+.cuadro4__skill:hover,
+.cuadro5__skill:hover,
+.cuadro6__skill:hover,
+.cuadro7__skill:hover,
+.cuadro8__skill:hover,
+.cuadro9__skill:hover,
+.cuadro10__skill:hover,
+.cuadro11__skill:hover,
+.cuadro__hobbie:hover,
+.cuadro2__hobbie:hover,
+.cuadro3__hobbie:hover,
+.cuadro4__hobbie:hover,
+.cuadro5__hobbie:hover,
+.cuadro6__hobbie:hover{
+    transform: rotateY(180deg) translateZ(90px);
+  transition: all 600ms;
 }
 
-.imagenModificada{
-    width: 4vw;
-    height: 8vh;
-    margin: 1vh 0 1vh 0;
+
+.cuadro__skill {
+  grid-column: 1 / 2;
+  grid-row: 1/ 2;
 }
 
-#skills__uno{
-    width:6vw;
-    margin-top: -0.5vh;
-    margin-bottom: -0.9rem;
+.cuadro2__skill {
+  grid-column: 2 / 3;
+  grid-row: 1/ 2;
 }
 
-#skills__cinco{
-    width:6.5vw;
-    height: 8vh;
+.cuadro3__skill {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
 }
 
-#skills__siete{
-    width:3.5vw;
+.cuadro4__skill {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
 }
 
-.softSkills__li__p{
-    font-family: var(--lato);
-    text-align: center;
-    color: var(--color-ceniza);
+.cuadro5__skill {
+  grid-column: 5 /6;
+  grid-row: 1 / 2;
 }
 
-.softSkills__titulo__skills{
- font-family: var(--open-sans);
- font-size: 5rem;
- color: var(--color-ceniza);
- text-decoration-line: underline;
+.cuadro6__skill {
+  grid-column: 6 /7;
+  grid-row: 1 / 2;
 }
 
-#hobbie__contenedor{
-    margin: 55vh 0 0 9vw;
-    width: 72vw;
-    height: 15.5vh;
+.cuadro7__skill {
+  grid-column-start: 7 / 8;
+  grid-row-start: 1 / 2;
+}
 
+.cuadro8__skill {
+  grid-column-start: 8 / 9;
+  grid-row-start: 1 / 2;
+}
+
+.cuadro9__skill {
+  grid-column-start: 9 / 10;
+  grid-row-start: 1 / 2;
+}
+
+.cuadro10__skill {
+  grid-column-start: 10 / 11;
+  grid-row-start: 1 / 2;
+}
+
+.cuadro11__skill {
+  grid-column-start: 11 / 12;
+  grid-row-start: 1 / 2;
+}
+
+.grid__hobbie {
+  display: grid;
+  grid-template-columns: 11% 11% 11% 11% 11% 11%;
+  grid-template-rows: 90%;
+  width: 50%;
+  height: 100%;
+  gap: 1.5rem;
+  margin-left: 23vw;
+}
+
+.cuadro__hobbie {
+  grid-column: 1 / 2;
+  grid-row: 1/ 2;
+  border: 1px solid #ccc;
+}
+
+.cuadro2__hobbie {
+  grid-column: 2 / 3;
+  grid-row: 1/ 2;
+  border: 1px solid #ccc;
+}
+
+.cuadro3__hobbie {
+  grid-column: 3 / 4;
+  grid-row: 1/ 2;
+  border: 1px solid #ccc;
+}
+
+.cuadro4__hobbie {
+  grid-column: 4 / 5;
+  grid-row: 1/ 2;
+  border: 1px solid #ccc;
+}
+
+.cuadro5__hobbie {
+  grid-column: 5 / 6;
+  grid-row: 1/ 2;
+  border: 1px solid #ccc;
+}
+
+.cuadro6__hobbie {
+  grid-column: 6 / 7;
+  grid-row: 1/ 2;
+  border: 1px solid #ccc;
 }

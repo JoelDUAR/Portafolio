@@ -1,4 +1,4 @@
-#container__fomracion{
+#container__formacion{
     border: 1px solid black;
     width: 99vw;
     height: 97vh;
@@ -9,11 +9,3 @@ position: absolute;
 z-index: 0;
 }
 
-#canvas__formacion{
-    border: 1px solid #000000;
-    z-index: 1;
-    position: relative;
-    margin: 42vh 0 0 0.5vw;
-    background: var(--background-canvas);
-    border-radius: 15px;
-}

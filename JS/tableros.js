@@ -102,17 +102,16 @@ function loop() {
 
 /* -------------------------------------------------------------0000------------------------------------------------------------------- */
 
-let anchoTablero = 1300;
-let altoTablero =400;
-let tablero2 = document.querySelector("#canvas__formacion");
+let anchoTablero = 700;
+let altoTablero =220;
+let tablero2 = document.querySelector("#canvas__formulario");
 let pincel2;
 let arrparticulas2;
-let coorX = (anchoTablero - window.innerWidth)*-1;
-let coorY = (altoTablero - window.innerHeight)*-1;
-
+let coorX =window.innerWidth;
+let coorY =window.innerHeight;
 
 arrparticulas2 = [];
-    for(let i = 0; i < 100; i++){
+    for(let i = 0; i < 150; i++){
         arrparticulas2.push({
             x: Math.random()*coorX,
             y: Math.random()*coorY,
@@ -123,7 +122,6 @@ arrparticulas2 = [];
             color: Math.random()>0.5? "#ffffff" : Math.random()<0.5? "#2186f9" : "#d44efc"
         })
     }
-    console.log(arrparticulas2[0].x)
     if (tablero2 && tablero2.getContext) {
             pincel2 = tablero2.getContext('2d');
             inicioTablero();
@@ -137,10 +135,10 @@ function inicioTablero(){
     
    } 
 
-
-console.log(arrparticulas2)
-
 function dibujarParticulas(){
+
+    pincel2.fillStyle = 'rgba(28,28,28,0.1)';
+    pincel2.fillRect(0, 0, tablero2.width, tablero2.height);
     pincel2.clearRect(0, 0, coorY, coorY);
 
     for(let i = 0; i < arrparticulas2.length; i++){
@@ -181,8 +179,7 @@ function dibujarParticulas(){
         pincel2.fill();
     }
 }
-console.log(arrparticulas2)
 function redimensionarTablero2(){
-    tablero2.width = (anchoTablero - window.innerWidth)*-1 ;
-    tablero2.height = (altoTablero - window.innerHeight)*-1;
+    tablero2.width = window.innerWidth;
+    tablero2.height = window.innerHeight;
 }

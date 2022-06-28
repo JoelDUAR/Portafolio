@@ -2,10 +2,11 @@
   border: 1px solid black;
   width: 99vw;
   height: 79vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacto__titulo {
-  margin: 2vh 0 0 70vw;
   width: 2.5vw;
   flex-wrap: wrap;
   line-height: 25.5vh;
@@ -14,4 +15,14 @@
 .titulo__cabecera__texto {
   display: flex;
   text-align: right;
+}
+
+
+#canvas__formulario{
+  border: 1px solid #000000;
+  z-index: 0;
+  position: relative;
+  margin: 0.5vh 0 0 0.5vw;
+  background: var(--background-canvas);
+  border-radius: 15px;
 }
