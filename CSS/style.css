@@ -7,10 +7,18 @@
   --background-negro-transparente: rgba(0, 0, 0, 0.4);
   --background-input: rgba(101, 101, 101, 0.812);
   --background-formulario: rgba(0, 0, 255, 0.92);
+  --background-menu-desplegado:#021e35f5;
+  --background-menu-desplegado2:#032a4af5;
+  --background-menu-desplegado3:#112738f5;
+  --background-menu-desplegado4:#20374af5;
+  --background-menu-desplegado5:#02447af5;
+  
 
   --btn-sombra-blanca: #ffffff;
   --btn-sombra-oscura: #000000;
+  --btn-link-card: #36ca15a4;
 
+  
   --color-general: #2186f9;
   --color-hover: #d44efc;
   --color__bg__fondos: #d44efc;
@@ -21,8 +29,8 @@
   --color-black: black;
   --color-titulo-cabecera: #0750a3;
   --color-sombra-btn: #004782;
-  --btn-link-card: #36ca15a4;
-
+  
+  --adinda: 'Adinda Melia';
   --meddon: "Meddon", cursive;
   --freckle:'Freckle Face', cursive;
   --lato: 'Lato', sans-serif;
