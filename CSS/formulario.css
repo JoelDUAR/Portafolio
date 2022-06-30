@@ -1,6 +1,6 @@
 #container__formulario {
   width: 99vw;
-  height: 79vh;
+  height: 80vh;
   display: flex;
   justify-content: space-between;
 }
@@ -17,17 +17,14 @@
 
 .titulo__cabecera__texto {
   display: flex;
-  
 }
 
-
 #canvas__formulario{
-
   z-index: 0;
   width:  calc(100vw - 9.7vw ) ;
   height: calc(100vh - 22vh);
   position: relative;
-  margin: 0.5vh 0 0 0.5vw;
+  margin: 4.5vh 0;
   background: var(--background-canvas);
   border-radius: 15px;
 }
@@ -36,8 +33,8 @@
   position: absolute;
   z-index: 2;
   width: 20vw;
-  height: 40vh;
-  margin: -65vh 4vw 0 55vw;
+  height: 59vh;
+  margin: -76vh 4vw 0 55vw;
   padding: 3vh 2vw 2vh 2vw;
   border: 1px solid var(--color-ceniza);
   display: flex;
@@ -62,19 +59,54 @@
 }
 
 .estilos__elementos__formularios{
-  margin-bottom: 1.4vh;
+  margin-top: 1.5vh;
   border-radius: 5px;
   background: var(--background-input);
-  font-size:1rem
+  font-size:1rem;
+  color: var(--color-ceniza)
 }
 
 .estilos__elementos__formularios::placeholder{
   color: var(--color-ceniza)
 }
 
+.textarea__formulario{
+  height: 15vh;
+
+}
+
 .boton__formulario{
-  width: 8vw;
-  height: 12vh;
+  width: 8rem;
+  height: 2rem;
   background: var(--color-general)
 }
 
+
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+ .input-container--invalid {
+  margin-bottom: 0.5rem;
+  font-family: var(--lato);
+}
+
+.input-container--invalid .estilos__elementos__formularios {
+  border: 1px solid var(--color-warning);
+  border-radius: 7px;
+}
+
+.input-message-error {
+  display: none;
+}
+
+.input-container--invalid .input-message-error {
+  color: var(--color-warning);
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}

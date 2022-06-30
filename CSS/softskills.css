@@ -1,7 +1,7 @@
 #container__softskills {
-
   width: 89vw;
   height: calc(100vh - 1.5rem);
+  margin-top: 5vh;
 }
 
 .container__skills__hobbie {

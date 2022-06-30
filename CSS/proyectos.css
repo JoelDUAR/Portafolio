@@ -1,6 +1,6 @@
 #container__proyectos {
   width: 99vw;
-  height: 97vh;
+  height: 99vh;
   display: flex;
   flex-direction: column;
 }
@@ -11,6 +11,7 @@
   height: 12vh;
   display: block;
 }
+
 .container__card {
   width: 70vw;
   height: 80vh;

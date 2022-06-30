@@ -31,9 +31,8 @@
   --color-sombra-btn: #004782;
   --color-btn-link: #c40000a4;
   --color-cuerpo-tarjeta: #449de6;
+  --color-warning: #ac0b0b;
   
-  
-  --adinda: 'Adinda Melia';
   --meddon: "Meddon", cursive;
   --freckle:'Freckle Face', cursive;
   --lato: 'Lato', sans-serif;
@@ -79,6 +78,7 @@ body{
 footer{
   width: calc(100vw - 9vw);
   height: 17vh;
+  margin-top: 3vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -167,11 +167,12 @@ footer{
   display: flex;
   flex-direction: column;
 align-items: center;
-margin-top: 1vh
+margin-top: 3vh
  }
 
  .p__curriculum{
   font-family: var(--lato);
   color: var(--color-ceniza);
   font-size: 1rem;
+  margin-top:1vh;
  }
