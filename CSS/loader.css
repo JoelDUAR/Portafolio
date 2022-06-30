@@ -1,0 +1,23 @@
+.contenedor__loader{
+    background: var(--background-menu);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    clip-path: circle(150% at 100% 0);
+    transition: clip-path 1s linear;
+}
+
+.loader{
+    font-family: var(--meddon);
+    
+}
+
+
+.loader2{
+    clip-path: circle(0 at 100% 0);
+}

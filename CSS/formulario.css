@@ -70,7 +70,7 @@
 }
 
 .estilos__elementos__formularios::placeholder{
-  color: var(--color-general)
+  color: var(--color-ceniza)
 }
 
 .boton__formulario{
