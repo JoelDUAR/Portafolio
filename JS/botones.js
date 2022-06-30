@@ -64,12 +64,12 @@ window.addEventListener("scroll", function () {
 
 botonNav.addEventListener("click", function () {
   if (btnChecked.checked == false) {
-    console.log(btnChecked.checked)
     abrirMenu();
+    document.querySelector("#header").classList.toggle(".clip__path__menu");
   } else {
-    console.log(btnChecked.checked)
     cerrarMenu();
   }
+  
 });
 
 function abrirMenu() {

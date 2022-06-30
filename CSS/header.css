@@ -207,7 +207,7 @@ i {
   margin: 0.5vh auto;
 }
 
-i:hover {
+i:hover, .lbl-menu:hover {
   transform: scale(0.7);
   color: var(--color-general);
   transition: all 0.2s ease;
@@ -226,6 +226,7 @@ i:active {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 50% 50%;
   justify-content:center;
+ 
 }
 
 .btn1{
