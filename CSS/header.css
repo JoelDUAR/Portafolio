@@ -262,7 +262,8 @@ i:active {
   grid-column: 4 / 5;
   grid-row: 2 / 3;
   background: var(--background-menu-desplegado5);
-  transition: all 0.4s ease;
+  background: var(--background-menu-desplegado5);transition: all 0.4s ease;
+
 }
 
 .btn1:hover, .btn3:hover, .btn4:hover{

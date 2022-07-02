@@ -45,7 +45,7 @@
 
   .contenedor__menu {
     width: 100vw;
-    height: calc(100vh - 12vh);
+    height: 100vh;
     margin-top: 12vh;
     grid-template-rows: 33.33% 33.3% 33.3%;
   }
