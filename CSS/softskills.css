@@ -37,7 +37,6 @@
   
 }
 
-
 .cuadro__skill,
 .cuadro2__skill,
 .cuadro3__skill,
@@ -169,38 +168,36 @@ figure:hover figcaption {
   margin-left: 23vw;
 }
 
+.border__hobbie{
+  border: 1px solid var(--color-ceniza);
+}
+
 .cuadro__hobbie {
   grid-column: 1 / 2;
   grid-row: 1/ 2;
-  border: 1px solid #ccc;
 }
 
 .cuadro2__hobbie {
   grid-column: 2 / 3;
   grid-row: 1/ 2;
-  border: 1px solid #ccc;
 }
 
 .cuadro3__hobbie {
   grid-column: 3 / 4;
   grid-row: 1/ 2;
-  border: 1px solid #ccc;
 }
 
 .cuadro4__hobbie {
   grid-column: 4 / 5;
   grid-row: 1/ 2;
-  border: 1px solid #ccc;
 }
 
 .cuadro5__hobbie {
   grid-column: 5 / 6;
   grid-row: 1/ 2;
-  border: 1px solid #ccc;
 }
 
 .cuadro6__hobbie {
   grid-column: 6 / 7;
   grid-row: 1/ 2;
-  border: 1px solid #ccc;
 }

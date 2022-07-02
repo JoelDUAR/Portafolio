@@ -330,6 +330,10 @@
     font-size:1rem;
   }
 
+  .boton__formulario{
+    width: 40%;
+  }
+
   /* footer */
 
   footer{
