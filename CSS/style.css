@@ -160,7 +160,7 @@ footer{
 }
 
 .footer__email:hover{
-  background-size: 52% 2px;
+  background-size: 100% 2px;
  }
 
  .contenedor__curriculum{
@@ -175,4 +175,11 @@ margin-top: 3vh
   color: var(--color-ceniza);
   font-size: 1rem;
   margin-top:1vh;
+ }
+
+ .copyright{
+ font-family: var(--lato);
+ color: var(--color-ceniza);
+ font-size: 1.2rem;
+ margin-top:1.5vh;
  }

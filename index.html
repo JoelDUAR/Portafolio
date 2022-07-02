@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="./CSS/formacion.css" />
   <link rel="stylesheet" href="./CSS/proyectos.css" />
   <link rel="stylesheet" href="./CSS/formulario.css" />
+  <link rel="stylesheet" href="./CSS/responsive-tablet.css">
+  <link rel="stylesheet" href="./CSS/responsive-celular.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Lato&family=Meddon&family=Monoton&family=Open+Sans:wght@300&display=swap"
     rel="stylesheet" />
@@ -46,7 +48,7 @@
     <canvas id="canvas"></canvas>
     <nav id="menu">
       <div id="container__nombre">
-        <a href="#header" class="btn__back">
+        <a href="#header" class="btn__back" onclick="location.reload()">
           <h3 id="menu__titulo" class="nombre">Joel Dupraz</h3>
         </a>
       </div>
@@ -64,7 +66,6 @@
         <a href="https://github.com/JoelDUAR" class="link" target="blank" rel="noopener noreferrer"><i class="fa-brands fa-github icon"></i></a>
         <a href="./assets/docs/C.V.Dupraz Ardiles, Joel Ruben.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf icon"></i></a>
       </div>
-      
     </nav>
     <div class="contenedor__menu invisible">
         <a class="btn-menu-desplegable btn1"><p>Sobre mí</p></a>
@@ -76,16 +77,16 @@
   </header>
   <main>
     <section id="container__sobre-mi" class="animado__scroll">
-      <div id="container__imagen__sobre-mi">
-        <img src="./assets/imagen/Civil_JyC-18.jpg" alt="imagen sobre mi" id="imagen__sobre__mi" />
-      </div>
       <div class="section__titulo__cabecera sobre-mi__titulo">
         <p>Sobre mi</p>
+      </div>
+      <div id="container__imagen__sobre-mi">
+        <img src="./assets/imagen/Civil_JyC-18.jpg" alt="imagen sobre mi" id="imagen__sobre__mi" />
       </div>
       <div id="sobre-mi__p__principal">
         <p>
           Hola, mi nombre es
-          <span id="span__nombre" class="nombre">Joel Dupraz </span> , soy
+          <span id="span__nombre2" class="nombre">Joel Dupraz </span> , soy
           Desarrollador Web, apasionado por Javascript y por Canvas
         </p>
       </div>
@@ -108,7 +109,6 @@
       </div> -->
     </section>
     <section id="container__softskills" class="animado__scroll">
-      <div>
         <div class="section__titulo__cabecera softSkills__titulo">
           <p>Soft Skills</p>
         </div>
@@ -161,7 +161,6 @@
                 alt="Imagen diálogo"><figcaption>Charlar</figcaption></figure>
           </div>
         </div>
-      </div>
     </section>
     <section id="container__formacion" class="animado__scroll">
       <div class="section__titulo__cabecera formacion__titulo">
@@ -223,7 +222,7 @@
     
     </section>
     <section id="container__proyectos" class="animado__scroll">
-      <div class="section__titulo__cabecera proyectos__titulo">
+      <div class="proyectos__titulo section__titulo__cabecera ">
         <p class="titulo__cabecera__texto">Proyectos</p>
       </div>
 
@@ -375,6 +374,9 @@
         </div>
     </section>
     <section id="container__formulario">
+      <div class="section__titulo__cabecera contacto__titulo">
+        <p class="titulo__cabecera__texto">Con tac to</p>
+      </div>
       <div>
         <canvas id="canvas__formulario"></canvas>
         <form action="https://formsubmit.co/00f353835be2a47a92f9de3dd8b7e59b" method="POST" class="formulario__contacto">
@@ -400,7 +402,7 @@
           </div>
           <div class="input-container">
             <label for="mensaje__contacto"></label>
-          <textarea name="comments" id="" cols="30" rows="20" name="texto" placeholder="Ingrese su comentario" required pattern="^.{1,300}$" title="Ingrese 300 caracteres como máximo." data-tipo="mensaje"
+          <textarea name="comments" id="" cols="30" rows="20" name="texto" placeholder="Ingrese su comentario" required maxlength="300" title="Ingrese 300 caracteres como máximo." data-tipo="mensaje"
             class="estilos__elementos__formularios textarea__formulario"></textarea>
           </div>
           <button class="boton__formulario estilos__elementos__formularios" name="btn">Enviar</button>
@@ -408,9 +410,6 @@
           <input type="hidden" name="_next" value="https://joelduar.github.io/Portafolio/">
           <input type="hidden" name="_captcha" value="false">
         </form>
-      </div>
-      <div class="section__titulo__cabecera contacto__titulo">
-        <p class="titulo__cabecera__texto">Con tac to</p>
       </div>
     </section>
   </main>
@@ -429,10 +428,11 @@
     </div>
     </div>
     <div id="footer__central">
-      <a href="#header" class="btn__back"><span id="footer__span__nombre" class="nombre">Joel Dupraz</span></a>
+      <a href="#header" class="btn__back" onclick="location.reload()"><span id="footer__span__nombre" class="nombre">Joel Dupraz</span></a>
       <p id="footer__central__texto">
         Gracias por visitar mi sitio web, aprecio que me hayas brindado tu
         tiempo y te deseo muchas bendiciones
+        <p class="copyright">&copy Portafolio by Joel Dupraz</p>
       </p>
     </div>
     <div id="footer__links">
@@ -442,7 +442,6 @@
       <a href="#container__formacion" id="footer__link__a">Formación</a>
       <a href="#container__proyectos" id="footer__link__a">Experiencia</a>
       <a href="#container__formulario" id="footer__link__a">Contactame</a>
-
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="./JS/loader.js"></script>
@@ -450,7 +449,6 @@
   <script src="./JS/scroll.js"></script>
   <script src="./JS/botones.js"></script>
   <script src="./JS/validaciones.js"></script>
-  <script src="./JS/formulario.js"></script>
   
 </body>
 
