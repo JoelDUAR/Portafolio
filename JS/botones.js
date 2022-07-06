@@ -15,7 +15,7 @@ btnSobreMi.addEventListener("click", function () {
         menu.classList.remove("menu-fixed");
         cerrarMenu();
       }
-      window.location.href = "#container__imagen__sobre-mi"
+      window.location.href = "#container__sobre-mi"
   });
 
 btnSoftSkills.addEventListener("click", function () {

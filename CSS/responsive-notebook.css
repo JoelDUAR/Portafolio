@@ -51,6 +51,18 @@
     margin-bottom: 5vh;
   }
 
+  .contenedor__menu{
+    width: 100vw;
+    height: 100vh;
+    
+    z-index: 100;
+    display:fixed;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    justify-content:center;
+   
+  }
+
   /* main - Sobre mi */
   #container__sobre-mi{
     width: 100vw;
