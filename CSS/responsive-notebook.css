@@ -54,7 +54,6 @@
   .contenedor__menu{
     width: 100vw;
     height: 100vh;
-    
     z-index: 100;
     display:fixed;
     grid-template-columns: 25% 25% 25% 25%;
