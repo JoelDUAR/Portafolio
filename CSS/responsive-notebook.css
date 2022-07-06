@@ -114,6 +114,13 @@
     line-height: 2.9rem
 }
 
+ /* main - Sft Skills */
+ #container__softskills {
+    width: 100vw;
+    margin-top: 1vh;
+    height: 104vh;
+  }
+
  /* main - Proyectos */
 
   
