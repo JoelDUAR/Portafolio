@@ -103,10 +103,6 @@ figure:hover figcaption {
   text-align: center;
   font-weight: bold;
 }
-/* .cuadro__skill {
-  grid-column: 1 / 2;
-  grid-row: 1/ 2;
-} */
 
 .cuadro2__skill {
   grid-column: 2 / 3;

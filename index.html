@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./CSS/formacion.css" />
   <link rel="stylesheet" href="./CSS/proyectos.css" />
   <link rel="stylesheet" href="./CSS/formulario.css" />
+  <link rel="stylesheet" href="./CSS/responsive-notebook.css">
   <link rel="stylesheet" href="./CSS/responsive-tablet.css">
   <link rel="stylesheet" href="./CSS/responsive-celular.css">
   <link
@@ -68,8 +69,8 @@
       </div>
     </nav>
     <div class="contenedor__menu invisible">
-        <a class="btn-menu-desplegable btn1"><p>Sobre mí</p></a>
-        <a class="btn-menu-desplegable btn2">soft Skills</a>
+        <a class="btn-menu-desplegable btn1">Sobre mí</a>
+        <a class="btn-menu-desplegable btn2">Soft Skills</a>
         <a class="btn-menu-desplegable btn3">Formación</a>
         <a class="btn-menu-desplegable btn4">Proyectos</a>
         <a class="btn-menu-desplegable btn5">Contactame</a>
@@ -77,20 +78,17 @@
   </header>
   <main>
     <section id="container__sobre-mi" class="animado__scroll">
-      <div class="section__titulo__cabecera sobre-mi__titulo">
-        <p>Sobre mi</p>
-      </div>
-      <div id="container__imagen__sobre-mi">
+      <div>
+         <div class="div_container">
+        <p class="section__titulo__cabecera sobre-mi__titulo">Sobre mi</p>
         <img src="./assets/imagen/Civil_JyC-18.jpg" alt="imagen sobre mi" id="imagen__sobre__mi" />
       </div>
-      <div id="sobre-mi__p__principal">
-        <p>
+      <div class="div_container">
+        <p id="sobre-mi__p__principal">
           Hola, mi nombre es
           <span id="span__nombre2" class="nombre">Joel Dupraz </span> , soy
           Desarrollador Web, apasionado por Javascript y por Canvas
         </p>
-      </div>
-      <div>
         <p id="sobre-mi__p__biografia">
           Tengo 30 años, argentino, residente en Córdoba Capital. Comencé mis
           estudios de programación en febrero de 2021, con lenguajes
@@ -107,9 +105,11 @@
           quien es mi pilar, gracias por tu amor, tu apoyo y tu vida
         </p>
       </div> -->
+      </div>
+     
     </section>
     <section id="container__softskills" class="animado__scroll">
-        <div class="section__titulo__cabecera softSkills__titulo">
+        <div id="softSkills__titulo" class="section__titulo__cabecera">
           <p>Soft Skills</p>
         </div>
         <div class="container__skills__hobbie">

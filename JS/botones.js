@@ -65,7 +65,7 @@ window.addEventListener("scroll", function () {
 botonNav.addEventListener("click", function () {
   if (btnChecked.checked == false) {
     abrirMenu();
-    document.querySelector("#header").classList.toggle(".clip__path__menu");
+    document.querySelector("#header").classList.toggle("clip__path__menu");
   } else {
     cerrarMenu();
   }

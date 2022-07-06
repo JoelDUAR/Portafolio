@@ -1,11 +1,24 @@
 #container__sobre-mi{
     width: 99vw;
     height: 98vh;
+    
+}
+
+.div_container{
+    margin:0;
+    padding:0;
+    position: absolute;
 }
 
 .sobre-mi__titulo{
-    top: -95vh;
-    left: 45vw;
+    width: 29vw;
+    top: 0;
+    left: 55vw;
+    margin-top: 4vh;
+    display: inline-block;
+    position:absolute;
+    z-index: 2;
+    
 }
 
 #imagen__sobre__mi{
@@ -19,11 +32,12 @@
 #sobre-mi__p__principal{
    
     font-family: var(--lato);
-    z-index: 1;
-    position: relative;
-    top: -90vh;
+    z-index: 2;
+    position: absolute;
+    top: 0vh;
     left: 45vw;
-    display: flex;
+    margin-top: 26vh;
+    display: inline-block;
     flex-wrap: wrap;
     width:45vw;
     font-size: 1.8em;
@@ -32,17 +46,19 @@
     text-align: center;
     color: var(--color-ceniza);
     line-height: 3rem;
+
 }
 
 
 #sobre-mi__p__biografia{
     
     font-family: var(--open-sans);
-    z-index: 1;
-    position: relative;
-    top: -85vh;
+    z-index: 2;
+    position: absolute;
+    top: 0;
     left: 45vw;
-    display: flex;
+    margin-top: 45vh;
+    display: inline-block;
     flex-wrap: wrap;
     width: 45vw;
     font-size: 1.8em;
