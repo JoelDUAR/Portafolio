@@ -1,7 +1,7 @@
-@media screen and (min-width: 1025px) and (max-width: 1920px) {
+@media screen and (min-width: 1025px) and (max-width: 1919px) {
   /* style */
   .section__titulo__cabecera {
-    font-size: 4.5rem;
+    font-size: 3.8rem;
     opacity: 0.8
   }
 
@@ -15,7 +15,7 @@
     left: 0;
     position: fixed;
     width: 100vw;
-    height: 12vh;
+    height: 10vh;
     flex-direction: row;
   }
 
@@ -28,43 +28,179 @@
   }
 
   #container__redes {
-    width: 20vw;
+    width: 15vw;
     margin: 1vh 0.5vw;
     flex-direction: row;
     justify-content: space-around;
   }
 
+  #titulo__principal {
+    top: 0;
+    margin-top: 25vh;
+  }
+
   .letra__accion,
   .letra__accion2,
   #span__nombre {
-    font-size: 3rem;
-    line-height: 0.5 vh;
+    font-size: 2.5rem;
+    line-height: 0.2 vh;
   }
 
   #div__scroll__down {
     left: 47vw;
+    margin-bottom: 5vh;
   }
 
-  .contenedor__menu {
+  /* main - Sobre mi */
+  #container__sobre-mi{
     width: 100vw;
-    height: calc(100vh - 12vh);
-    margin-top: 12vh;
-    grid-template-rows: 33.33% 33.3% 33.3%;
+}
+
+.sobre-mi__titulo{
+    width: 35vw;
+    top: 0;
+    left: 55vw;
+    margin-top: 4vh;
+    display: inline-block;
+    position:absolute;
+    z-index: 2;
+    
+}
+
+#imagen__sobre__mi{
+    width: 50vw;
+    height:98vh;
+    opacity: 0.1;
+    z-index: 0;
+    position: relative;
+}
+
+#sobre-mi__p__principal{
+   
+    font-family: var(--lato);
+    z-index: 2;
+    position: absolute;
+    top: 0vh;
+    left: 45vw;
+    margin-top: 20vh;
+    display: inline-block;
+    flex-wrap: wrap;
+    width:45vw;
+    font-size: 1.3em;
+    font-family: var(--lato);
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-ceniza);
+    line-height: 3rem;
+
+}
+
+
+#sobre-mi__p__biografia{
+    
+    font-family: var(--open-sans);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 45vw;
+    margin-top: 40vh;
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 45vw;
+    font-size: 1em;
+    font-family: var(--lato);
+    text-align: center;
+    color: var(--color-ceniza);
+    line-height: 2.9rem
+}
+
+ /* main - Proyectos */
+
+  
+  .container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 30%;
+    margin: 2vh auto 1vh auto;
+    flex-wrap: wrap;
+  }
+  
+  .card__father {
+    perspective: 2000px;
+    margin: 2vh 0 0 0.5vw;
+    width: 30%;
+  }
+  
+  .card {
+    width: 35vw;
+    height: 32vh;
+    margin: 0 0 0 1vw;
+  }
+  
+  .body__card__back {
+    padding: 20px;
+}
+  
+  .container__btn__card__back {
+    display: flex;
+    margin-top: 0.5vh;
+  }
+  
+/* main - Formulario */
+  
+#container__formulario {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #canvas__formulario{
+    z-index: 0;
+    width: 103%;
+    height: 43vw;
+    position: relative;
+    margin: 4.5vh 0;
+    background: var(--background-canvas);
+    border-radius: 15px;
   }
 
-  .btn3 {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
+  .formulario__contacto{
+    width: 28vw;
+    height: 76vh;
+    margin: -92vh 4vw 0 55vw;
   }
 
-  .btn4 {
-    grid-column: 3 / 5;
-    grid-row: 2 / 3;
+  .titulo__formulario{
+    font-size: 2rem;
+    text-align: center;
   }
 
-  .btn5 {
-    grid-column: 1 / 5;
-    grid-row: 3 / 4;
-    background: var(--background-menu-desplegado5);
+  .p__formulario{
+    font-family: var(--lato);
+    font-size:1rem;
+    color: var(--color-ceniza);
+    line-height: 3.5vh;
+    margin-bottom: 1.5vh;
   }
+
+  /* footer */
+
+  footer{
+    width: 100vw;
+    height: 19vh;
+    margin-top: 20vh;
+    flex-wrap: wrap;
+  }
+
+  #footer__central__texto{
+    width:127%;
+    line-height: 1.2rem;
+    font-size: 1rem;
+  }
+
+  #footer__link__a{
+    line-height:3.5vh;
+  }
+
 }
